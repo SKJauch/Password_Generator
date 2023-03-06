@@ -16,7 +16,7 @@ const passwordChar = {
 // write functions
 function generatePassword () {
   let passwordInfo = ""
-  var charLength = prompt ("How many characters should the password be?")
+  var charLength = prompt ("How many characters should the password be? (Must be at least 8)")
   if (charLength < 8 || charLength >128 || isNaN(charLength) ==true) {
     alert ("Incorrect password length")
     return generatePassword
